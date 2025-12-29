@@ -3,13 +3,16 @@ import { Home, Users, BarChart3, BookOpen, Award, ChevronRight, Menu, X, LogOut,
 import { useState } from "react";
 
 const menu = [
-  { name: "Dashboard", path: "/dashboar", icon: Home },
+  { name: "Dashboard", path: "/dashboard/dashboar", icon: Home },
+  { name: "Register Teacher's", path: "/dashboard/tea", icon: Home },
   { name: "Teachers", path: "/dashboard/teacher", icon: Users },
   { name: "Classes", path: "/dashboard/class", icon: BookOpen },
   { name: "Subjects", path: "/dashboard/subject", icon: Award },
   { name: "Reports", path: "/dashboard/report", icon: BarChart3 },
 
+
   { name: "Ranks", path: "/dashboard/rank", icon: Award },
+  { name: "Profile", path: "/dashboard/profile", icon: Award },
   
 ];
 

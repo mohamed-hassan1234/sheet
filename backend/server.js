@@ -18,7 +18,7 @@ app.use(cors({
   ],
   credentials: true
 }));
-app.use(express.json());
+app.use(express.json()); 
 
 /* =======================
    ROUTES
@@ -32,6 +32,10 @@ app.use("/api/chapters", require("./routes/chapterRoutes"));
 app.use("/api/ranking", require("./routes/rankingRoutes"));
 app.use("/api/report", require("./routes/reportRoutes"));
 app.use("/api/subjects", require("./routes/subjectRoutes"));
+app.use("/api/teacheers", require("./routes/teacheerRoutes"));
+app.use("/api", require("./routes/dashboardAdminRoutes"));
+app.use("/api/teacher", require("./routes/teacherDashboardRoutes"));
+
 
 /* =======================
    DEFAULT ROUTE

@@ -8,7 +8,7 @@ const Register = () => {
     email: "",
     password: "",
     role: "teacher"
-  });
+  })
   const [showPassword, setShowPassword] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [errors, setErrors] = useState({});

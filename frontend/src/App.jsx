@@ -12,36 +12,46 @@ import Report from './components/Report'
 import Dashboard from './components/Dashboard'
 import TeacherDashboard from './components/TeacherDashboard'
 import Subject from './components/Subject'
+import Tea from './components/Tea'
+import AdminProfile from './components/AdminProfile'
+import TeacherProfile from './components/TeacherProfile'
+import AdminDashboard from './components/AdminDashbaord'
+import TeacherDashboardd from './components/TeacherDashboardd'
 
 const App = () => {
   return (
     
     <Routes>
-      <Route path="/register" element={<Register />} />
       <Route path='/' element={<Login />} />
-
+      <Route path="/register" element={<Register />} />
 
 
      
-
 <Route path='/teacher-dash' element={<TeacherDashboard />} >
+ <Route path='dash' element={<TeacherDashboardd />} />
  <Route path='chapter' element={<Chapter />} />
 
       <Route path='activity' element={<Activity />} />
 
       <Route path='attendance' element={<Attendance />} />
+      <Route path='teacherprofile' element={<TeacherProfile />} />
 </Route>
 
 
       {/* Admin   dashbaord */}
       <Route path='/dashboard' element={<Dashboard />} >
 
+      <Route path='dashboar' element={<AdminDashboard />} />
       <Route path='report' element={<Report />} />
       <Route path='teacher' element={<Teacher />} />
       <Route path='class' element={<Class />} />
       <Route path='rank' element={<Rank />} />
       <Route path='subject' element={<Subject />} />
+    <Route  path='profile' element={<AdminProfile/>} />
+      <Route path="tea" element={<Tea/>} />
+
       </Route>
+      
     </Routes>
   )
 }
